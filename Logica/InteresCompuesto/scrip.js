@@ -9,10 +9,8 @@ console.log(tasaInteres);
 let nroDiasCiclo = parseInt(prompt('Ciclo de inversión (Días): '))
 console.log(nroDiasCiclo);
 
-let nroDiasInversion = parseInt(prompt("Dias de reinversión de capital: "));
-console.log(nroDiasInversion);
-
-let nroCiclos = (Math.trunc(nroDiasInversion)/Math.trunc(nroDiasCiclo))
+let nroCiclos = parseInt(prompt("Número de ciclos a calcular: "));
+console.log(nroCiclos);
 
 console.log(`Numero de ciclos a realizar es de: ${nroCiclos}`)
 
