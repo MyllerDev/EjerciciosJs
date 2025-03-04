@@ -1,31 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora de Interés Compuesto</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="conten">
-        <h1>Calculadora de Interes Compuesto</h1>
-        <p id="texto"></p>
-        
-        <p>Capital Inicial:</p>
-        <input id="capital" type="number">
-        
-        <p>Tasa de Interes Diario: </p>
-        <input id="tasaInteres" type="number">
-        
-        <p>Ciclo de inversión(Días): </p>
-        <input id="cicloInversion" type="number">
-        
-        <p>Numero de ciclos: </p>
-        <input id="numeroCiclos" type="number"><br><br>
-        
-        
+
+    <div class="container">
+        <h1>Calculadora de Interés Compuesto</h1>
+
+        <div class="input-group">
+            <label for="capitalInicial">Capital Inicial ($):</label>
+            <input id="capitalInicial" type="number" placeholder="Ingrese el capital inicial">
+        </div>
+
+        <div class="input-group">
+            <label for="tasaInteres">Tasa de Interés Diario (%):</label>
+            <input id="tasaInteres" type="number" placeholder="Ingrese la tasa de interés">
+        </div>
+
+        <div class="input-group">
+            <label for="cicloInversion">Ciclo de inversión (Días):</label>
+            <input id="cicloInversion" type="number" placeholder="Ingrese los días del ciclo">
+        </div>
+
+        <div class="input-group">
+            <label for="numeroCiclos">Número de ciclos:</label>
+            <input id="numeroCiclos" type="number" placeholder="Ingrese la cantidad de ciclos">
+        </div>
+
+        <button id="btnCalcular">Calcular</button>
+
+        <h2>Resultados</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ciclo</th>
+                    <th>Capital Inicial</th>
+                    <th>Interés del Ciclo</th>
+                    <th>Total Acumulado</th>
+                </tr>
+            </thead>
+            <tbody id="tablaResultados">
+            </tbody>
+        </table>
     </div>
-    <button id="btnCalcular">Calcular</button>
-    <div id="container"></div>
-    <script src="scrip.js"></script>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
